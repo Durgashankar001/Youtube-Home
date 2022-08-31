@@ -9,7 +9,7 @@ menu.onclick = () => {
 
 
 
-let api = "AIzaSyAI_67DutYCz5HOxYyrEcRDTFSteSLMQO4"
+let api = ""
 
 let url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=100&q=trending&key=AIzaSyAI_67DutYCz5HOxYyrEcRDTFSteSLMQO4`
 
