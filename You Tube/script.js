@@ -1,17 +1,15 @@
 let menu = document.getElementById("menu1");
 let sideBar = document.querySelector(".side_bar");
 let container = document.querySelector(".container");
+import Api from "./api.js"
+console.log(Api())
 
 menu.onclick = () => {
     sideBar.classList.toggle("small_sidebar")
     container.classList.toggle("large_container")
 }
-
-
-
-let api = ""
-
-let url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=100&q=trending&key=AIzaSyAI_67DutYCz5HOxYyrEcRDTFSteSLMQO4`
+let x = Api()
+let url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=100&q=trending&key=${x}`
 
 let getData = async(url) => {
     let res =await fetch(url)
@@ -40,6 +38,5 @@ let append = (data) => {
 
 getData(url)
 
-// https://www.googleapis.com/youtube/v3/channels?part=snippet&UC2Z2M3HR-yAbUpAdyXEGBOQ&fields=items%2Fsnippet%2Fthumbnails&key=AIzaSyAI_67DutYCz5HOxYyrEcRDTFSteSLMQO4
 
 
