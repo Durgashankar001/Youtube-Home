@@ -2,7 +2,6 @@ let menu = document.getElementById("menu1");
 let sideBar = document.querySelector(".side_bar");
 let container = document.querySelector(".container");
 import Api from "./Api/api.js"
-console.log(Api())
 
 menu.onclick = () => {
     sideBar.classList.toggle("small_sidebar")
