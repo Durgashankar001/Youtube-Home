@@ -26,7 +26,9 @@ let append = (data) => {
         <div class="vid_info">
             <a href="">${el.snippet.title}</p>
             <p>${el.snippet.channelTitle}</p>
+
             <p>15k views &bull; 2 days</p>
+            
         </div>
     </div>
 </div>`
